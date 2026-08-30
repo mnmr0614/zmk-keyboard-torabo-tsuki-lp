@@ -29,7 +29,7 @@
         };
 
         BrowserForward {
-            bindings = <&none>;
+            bindings = <&mkp MB5>;
             key-positions = <20 21>;
         };
     };
