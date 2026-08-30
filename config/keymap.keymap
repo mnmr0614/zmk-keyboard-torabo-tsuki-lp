@@ -22,6 +22,16 @@
             bindings = <&mkp MB3>;
             key-positions = <33 35>;
         };
+
+        BrowserBack {
+            bindings = <&mkp MB4>;
+            key-positions = <19 20>;
+        };
+
+        BrowserForward {
+            bindings = <&none>;
+            key-positions = <20 21>;
+        };
     };
 
     keymap {
