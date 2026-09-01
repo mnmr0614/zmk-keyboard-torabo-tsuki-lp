@@ -202,4 +202,5 @@ static const struct zmk_input_processor_driver_api scroll_inertia_driver_api = {
                           CONFIG_KERNEL_INIT_PRIORITY_DEFAULT,                               \
                           &scroll_inertia_driver_api);
 
-DT_INST_FOREACH_STATUS_OKAY(SCROLL_INERTIA_INST)m,,,,,,,,,,,m,
+DT_INST_FOREACH_STATUS_OKAY(SCROLL_INERTIA_INST)
+
