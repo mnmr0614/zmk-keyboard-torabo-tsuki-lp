@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
+    - name: te9no
+      url-base: https://github.com/te9no
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -29,5 +31,8 @@ manifest:
       revision: main
     - name: zmk-driver-kscan-4-direction-switch
       remote: sekigon-gonnoc
+    - name: zmk-input-processor-keybind
+      remote: te9no
+      revision: main
   self:
     path: config
