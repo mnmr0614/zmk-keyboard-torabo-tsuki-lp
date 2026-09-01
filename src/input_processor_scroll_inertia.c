@@ -29,6 +29,7 @@ struct scroll_inertia_config {
     int32_t decay_permille;
     int32_t stop_threshold_q8;
     int32_t idle_timeout_ms;
+    int32_t min_start_q8;
 };
 
 struct scroll_inertia_data {
@@ -80,8 +81,8 @@ static void inertia_work_handler(struct k_work *work) {
     }
 
     if (!data->inertia_active) {
-        bool x_ok = inertia_abs(data->vel_x_q8) >= cfg->stop_threshold_q8;
-        bool y_ok = inertia_abs(data->vel_y_q8) >= cfg->stop_threshold_q8;
+        bool x_ok = inertia_abs(data->vel_x_q8) >= cfg->min_start_q8;
+        bool y_ok = inertia_abs(data->vel_y_q8) >= cfg->min_start_q8;
         if (!x_ok && !y_ok) {
             return;
         }
@@ -195,7 +196,8 @@ static const struct zmk_input_processor_driver_api scroll_inertia_driver_api = {
         .decay_permille    = DT_INST_PROP_OR(n, decay_permille, 920),                        \
         .stop_threshold_q8 = DT_INST_PROP_OR(n, stop_threshold_q8, 96),                     \
         .idle_timeout_ms   = DT_INST_PROP_OR(n, idle_timeout_ms, 50),                       \
-    };                                                                                       \
+        .min_start_q8      = DT_INST_PROP_OR(n, min_start_q8, 200),                          \
+    };                                                                                       \                                                                            \
     DEVICE_DT_INST_DEFINE(n, scroll_inertia_init, NULL,                                      \
                           &scroll_inertia_data_##n,                                          \
                           &scroll_inertia_config_##n, POST_KERNEL,                           \
