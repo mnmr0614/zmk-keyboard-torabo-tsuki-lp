@@ -33,6 +33,15 @@ properties:
       256 equals 1 XY unit per 10 ms tick. Default 96 ≈ 0.375 units/tick.
       Lower values allow longer coasting.
 
+  min-start-q8:
+    type: int
+    default: 200
+    description: |
+      Minimum velocity (Q8 fixed-point) required when the finger lifts for inertia
+      to start coasting at all. Slower releases are ignored entirely; only fast
+      flicks trigger inertia, whose smoothness is governed separately by
+      stop-threshold-q8 and decay-permille.
+
   idle-timeout-ms:
     type: int
     default: 50
