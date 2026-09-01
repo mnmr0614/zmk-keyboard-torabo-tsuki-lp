@@ -11,6 +11,15 @@
         };
     };
 
+    zip_scroll_inertia_tp: zip_scroll_inertia_tp {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        decay-permille = <920>;
+        stop-threshold-q8 = <96>;
+        idle-timeout-ms = <50>;
+        track-remainders;
+    };
+
     zip_volume_keys: zip_volume_keys {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
@@ -26,7 +35,7 @@
         compatible = "zmk,input-listener";
         device = <&pointing_device_split>;
         status = "okay";
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) &zip_x_scaler 0 1 &zip_xy_to_scroll_mapper>;
+        input-processors = <&zip_scroll_inertia_tp &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT) &zip_x_scaler 0 1 &zip_y_scaler 2 3 &zip_xy_to_scroll_mapper>;
 
         volume_1 {
             layers = <1>;
