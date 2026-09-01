@@ -197,7 +197,7 @@ static const struct zmk_input_processor_driver_api scroll_inertia_driver_api = {
         .stop_threshold_q8 = DT_INST_PROP_OR(n, stop_threshold_q8, 96),                     \
         .idle_timeout_ms   = DT_INST_PROP_OR(n, idle_timeout_ms, 50),                       \
         .min_start_q8      = DT_INST_PROP_OR(n, min_start_q8, 200),                          \
-    };                                                                                       \                                                                            \
+    };                                                                                       \
     DEVICE_DT_INST_DEFINE(n, scroll_inertia_init, NULL,                                      \
                           &scroll_inertia_data_##n,                                          \
                           &scroll_inertia_config_##n, POST_KERNEL,                           \
