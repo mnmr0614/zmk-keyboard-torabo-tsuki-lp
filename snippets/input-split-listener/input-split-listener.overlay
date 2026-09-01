@@ -15,7 +15,7 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
-        bindings = <&none>, <&none>, <&kp C_VOLUME_DOWN>, <&kp C_VOLUME_UP>;
+        bindings = <&none>, <&none>, <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
         tick = <10>;
         wait-ms = <20>;
         tap-ms = <5>;
