@@ -19,4 +19,9 @@ config TORABO_SPLIT_PERIPHERAL_ADV_RECOVERY_INTERVAL_MS
     default 3000
     range 500 60000
 
+config ZMK_INPUT_PROCESSOR_SCROLL_INERTIA
+    bool "Enable inertia scrolling input processor for REL_X/Y trackpads"
+    default y
+    depends on ZMK_POINTING
+
 endif
