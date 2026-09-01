@@ -5,3 +5,8 @@ if(CONFIG_SHIELD_TORABO_TSUKI_LP_LEFT OR CONFIG_SHIELD_TORABO_TSUKI_LP_RIGHT)
   zephyr_library_sources_ifdef(CONFIG_TORABO_SPLIT_PERIPHERAL_ADV_RECOVERY
     src/split_peripheral_adv_recovery.c)
 endif()
+
+if(CONFIG_ZMK_INPUT_PROCESSOR_SCROLL_INERTIA)
+  zephyr_library_named(zmk-input-processor-scroll-inertia)
+  zephyr_library_sources(src/input_processor_scroll_inertia.c)
+endif()
