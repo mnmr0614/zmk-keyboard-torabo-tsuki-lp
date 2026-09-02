@@ -48,11 +48,11 @@
 
         layer_0 {
             bindings = <
-&none              &none      &none         &none         &none                          &none                                                              &none  &none  &none                    &none                  &none                     &none
-&kp ESC            &kp Q      &kp W         &kp E         &kp R                          &kp T                                                              &kp Y  &kp U  &kp I                    &kp O                  &kp P                     &kp BSPC
-&kp LANGUAGE_2     &kp A      &kp S         &kp D         &kp F                          &kp G           &none                            &none             &kp H  &kp J  &kp K                    &kp L                  &mt_balanced LCTRL MINUS  &kp LANGUAGE_1
-&kp LG(LA(SPACE))  &kp Z      &kp X         &kp C         &kp V                          &kp B           &kp ESC                          &kp ESC           &kp N  &kp M  &mt_balanced RALT COMMA  &mt_balanced RGUI DOT  &msc MOVE_Y(320)          &kp LC(LA(TAB))
-&kp LC(LA(SPACE))  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt_balanced LEFT_SHIFT SPACE  &lt 1 LS(TAB)   &mo 2 TAB  &mt LEFT_SHIFT SPACE  &mt RSHIFT ENTER  &mo 3  &none  &none                    &msc MOVE_X(-320)      &msc MOVE_Y(-320)         &msc MOVE_X(320)
+&none              &none      &none         &none         &none                          &none                                                      &none  &none  &none      &none                  &none                     &none
+&kp ESC            &kp Q      &kp W         &kp E         &kp R                          &kp T                                                      &kp Y  &kp U  &kp I      &kp O                  &kp P                     &kp BSPC
+&kp LANGUAGE_2     &kp A      &kp S         &kp D         &kp F                          &kp G           &none      &none             &kp H  &kp J  &kp K                    &kp L                  &mt_balanced LCTRL MINUS  &kp LANGUAGE_1
+&kp LG(LA(SPACE))  &kp Z      &kp X         &kp C         &kp V                          &kp B           &kp ESC    &kp ESC           &kp N  &kp M  &mt_balanced RALT COMMA  &mt_balanced RGUI DOT  &msc MOVE_Y(320)          &kp LC(LA(TAB))
+&kp LC(LA(SPACE))  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt_balanced LEFT_SHIFT SPACE  &lt 1 LS(TAB)   &lt 2 TAB  &mt RSHIFT ENTER  &mo 3  &none  &none                    &msc MOVE_X(-320)      &msc MOVE_Y(-320)         &msc MOVE_X(320)
             >;
         };
 
