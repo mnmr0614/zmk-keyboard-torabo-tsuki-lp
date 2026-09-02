@@ -48,11 +48,11 @@
 
         layer_0 {
             bindings = <
-&none           &none      &none         &none         &none  &none                                          &none  &none  &none      &none             &none             &none
-&kp TAB         &kp Q      &kp W         &kp E         &kp R  &kp T                                          &kp Y  &kp U  &kp I      &kp O             &kp P             &kp BSPC
-&kp LANGUAGE_2  &kp A      &kp S         &kp D         &kp F  &kp G  &none                 &none             &kp H  &kp J  &kp K      &kp L             &mt LCTRL MINUS   &kp LANGUAGE_1
-&kp LSHFT       &kp Z      &kp X         &kp C         &kp V  &kp B  &kp ESC               &kp ESC           &kp N  &kp M  &kp COMMA  &kp DOT           &msc MOVE_Y(300)   &kp RSHFT
-&kp LCTRL       &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &mo 2  &mt LEFT_SHIFT SPACE  &mt RSHIFT ENTER  &mo 3  &none  &none      &msc MOVE_X(-300)  &msc MOVE_Y(-300)  &msc MOVE_X(300)
+&none              &none      &none         &none         &none                          &none                                                              &none  &none  &none                    &none                  &none                     &none
+&kp ESC            &kp Q      &kp W         &kp E         &kp R                          &kp T                                                              &kp Y  &kp U  &kp I                    &kp O                  &kp P                     &kp BSPC
+&kp LANGUAGE_2     &kp A      &kp S         &kp D         &kp F                          &kp G           &none                            &none             &kp H  &kp J  &kp K                    &kp L                  &mt_balanced LCTRL MINUS  &kp LANGUAGE_1
+&kp LG(LA(SPACE))  &kp Z      &kp X         &kp C         &kp V                          &kp B           &kp ESC                          &kp ESC           &kp N  &kp M  &mt_balanced RALT COMMA  &mt_balanced RGUI DOT  &msc MOVE_Y(320)          &kp LC(LA(TAB))
+&kp LC(LA(SPACE))  &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt_balanced LEFT_SHIFT SPACE  &lt 1 LS(TAB)   &mo 2 TAB  &mt LEFT_SHIFT SPACE  &mt RSHIFT ENTER  &mo 3  &none  &none                    &msc MOVE_X(-320)      &msc MOVE_Y(-320)         &msc MOVE_X(320)
             >;
         };
 
@@ -60,7 +60,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -70,7 +70,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -78,11 +78,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans   &trans   &trans  &trans           &trans                       &trans         &trans         &trans    &trans      &trans         &trans
-&trans  &kp F1   &kp F2   &kp F3  &kp F4           &kp F5                       &kp PAGE_UP    &kp BACKSPACE  &kp UP    &kp DELETE  &trans         &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9           &kp F10      &trans  &trans  &kp HOME       &kp LEFT       &kp DOWN  &kp RIGHT   &mt RCTRL END  &trans
-&trans  &kp F11  &kp F12  &none   &kp PRINTSCREEN  &kp C_PAUSE  &trans  &trans  &kp PAGE_DOWN  &trans         &trans    &trans      &trans         &trans
-&trans  &trans   &trans   &trans  &trans           &trans       &trans  &trans  &trans         &trans         &trans    &trans      &trans         &trans
+&trans  &trans   &trans   &trans  &trans       &trans                           &trans         &trans         &trans    &trans      &trans         &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4       &kp F5                           &kp PAGE_UP    &kp BACKSPACE  &kp UP    &kp DELETE  &trans         &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9       &kp F10          &trans  &trans  &kp HOME       &kp LEFT       &kp DOWN  &kp RIGHT   &mt RCTRL END  &trans
+&trans  &kp F11  &kp F12  &none   &kp C_PAUSE  &kp PRINTSCREEN  &trans  &trans  &kp PAGE_DOWN  &trans         &trans    &trans      &trans         &trans
+&trans  &trans   &trans   &trans  &trans       &trans           &trans  &trans  &trans         &trans         &trans    &trans      &trans         &trans
             >;
         };
     };
