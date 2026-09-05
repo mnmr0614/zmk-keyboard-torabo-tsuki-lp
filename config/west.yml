@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/sekigon-gonnoc
     - name: te9no
       url-base: https://github.com/te9no
+    - name: mnmr0614
+      url-base: https://github.com/mnmr0614
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,7 +21,7 @@ manifest:
       remote: sekigon-gonnoc
       revision: main
     - name: zmk-driver-paw3222
-      remote: sekigon-gonnoc
+      remote: mnmr0614
       revision: torabo-tsuki
     - name: zmk-driver-iqs7211e
       remote: sekigon-gonnoc
